@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação e fluxo de contribuição
+    url: https://github.com/SmartMall-AI/docs-smartmall-ai
+    about: Consulte o escopo, o contrato, o fluxo de trabalho e os links do projeto.

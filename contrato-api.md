@@ -1,6 +1,6 @@
 # Proposta inicial de contrato da API
 
-Este contrato detalha o planejamento para permitir o trabalho separado do frontend e do backend. Ainda não foi implementado nem validado pela equipe. As escolhas de nomes de campos, enums, formatos e respostas abaixo são propostas para alinhamento.
+Este contrato detalha o planejamento para permitir o trabalho separado do frontend e do backend. Cadastro, listagem e detalhe de ocorrências têm implementação técnica no [PR #1 do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1), ainda em revisão. As demais rotas continuam propostas. O alinhamento entre as frentes e a validação com usuários ainda precisam ser concluídos.
 
 Base sugerida: `/api/v1`. JSON com campos em `snake_case`, identificadores UUID em string e datas ISO 8601 com fuso horário. A interface traduz os valores de enum para português.
 

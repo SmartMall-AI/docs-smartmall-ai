@@ -1,0 +1,35 @@
+name: Relatar problema
+description: Registrar uma falha reproduzível com evidências.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento observado
+      description: O que aconteceu e qual o impacto?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Como reproduzir
+      description: Informe os passos e use dados fictícios.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Ambiente e evidências
+      description: Informe versão ou commit, navegador, logs sem segredos e capturas, se disponíveis.
+  - type: input
+    id: trello
+    attributes:
+      label: Cartão do Trello relacionado

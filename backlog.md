@@ -1,6 +1,6 @@
 # Backlog do hackrun
 
-Todas as tarefas abaixo começam como **A fazer**. Não foram criadas issues nem um quadro GitHub Projects. As frentes são papéis sugeridos; nenhum integrante foi atribuído.
+Este arquivo mantém o planejamento das entregas. **BE-01 e BE-02 estão em revisão** no [PR #1 do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1); as demais tarefas de implementação continuam planejadas. O [Trello](https://trello.com/b/TMJ0EfTl) acompanha o andamento por cores. Não foram criadas issues para duplicar este backlog nem um quadro GitHub Projects.
 
 Sugestão para o quadro: **A fazer → Em andamento → Em revisão → Concluído**. Usar rótulos `backend`, `frontend`, `docs`, `ia`, `integracao` e prioridades `P0` e `P1`.
 
@@ -28,4 +28,4 @@ Sugestão para o quadro: **A fazer → Em andamento → Em revisão → Concluí
 
 Integrar o cadastro persistido primeiro. O frontend pode usar dados fictícios para desenvolver telas enquanto a API é construída, desde que estejam identificados e sejam substituídos na integração. Não deixar a primeira integração para o fim do evento.
 
-A divisão em quatro pessoas do planejamento pode ser mantida: frontend; backend e dados; IA; produto, integração e validação. Ajustar nomes e prazos quando a equipe e a duração do hackrun forem informadas.
+A equipe tem quatro pessoas. João Geraldo lidera o projeto e assume backend, dados e integração de IA. A proposta para as outras três frentes é Frontend A, Frontend B e QA/documentação. A distribuição nominal e os prazos ainda serão definidos pela equipe.
