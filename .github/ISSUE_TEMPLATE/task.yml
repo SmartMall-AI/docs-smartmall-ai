@@ -1,0 +1,28 @@
+name: Propor entrega
+description: Descrever uma alteração para alinhamento antes da implementação.
+title: "[TAREFA] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: trello
+    attributes:
+      label: ID e link do cartão do Trello
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo e escopo
+      description: Explique a entrega proposta e sua ligação com o MVP.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critério de aceite
+      description: O que deve ser demonstrado para considerar a entrega pronta?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências e verificação
+      description: Informe dependências e como pretende verificar o resultado.
