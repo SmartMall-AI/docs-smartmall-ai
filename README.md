@@ -12,7 +12,8 @@ Este repositório é o ponto de entrada para conhecer a proposta, acompanhar o d
 
 - [Escopo e critérios de aceite](escopo.md)
 - [Arquitetura e responsabilidades](arquitetura.md)
-- [Proposta de contrato da API](contrato-api.md)
+- [Contrato implementado da API](contrato-api.md)
+- [Entrega do backend e guia de integração](entrega-backend.md)
 - [Backlog por frente](backlog.md)
 - [Validação com usuários](validacao-usuarios.md)
 - [Roteiro de demonstração](demonstracao.md)
@@ -25,7 +26,7 @@ Este repositório é o ponto de entrada para conhecer a proposta, acompanhar o d
 
 | Repositório | Responsabilidade | Situação |
 | --- | --- | --- |
-| [be-smartmall-ai](https://github.com/SmartMall-AI/be-smartmall-ai) | API, banco e integração com IA | Base e ocorrências implementadas no [PR #1](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1), em revisão |
+| [be-smartmall-ai](https://github.com/SmartMall-AI/be-smartmall-ai) | API, banco e integração com IA | Fluxo do MVP integrado à main no [PR #3](https://github.com/SmartMall-AI/be-smartmall-ai/pull/3); análise real pendente de saldo da API |
 | [fe-smartmall-ai](https://github.com/SmartMall-AI/fe-smartmall-ai) | Interface, formulários e dashboard | Estrutura inicial; telas ainda não implementadas |
 | [docs-smartmall-ai](https://github.com/SmartMall-AI/docs-smartmall-ai) | Escopo, contrato, governança e evidências | Documentação do desenvolvimento |
 
@@ -35,7 +36,7 @@ A organização é [SmartMall-AI](https://github.com/SmartMall-AI). Os três rep
 
 - [Fluxograma no Miro](https://miro.com/app/board/uXjVEOPHRG4=/?share_link_id=465697087214): fluxo planejado e responsabilidades dos módulos.
 - [Trello](https://trello.com/b/TMJ0EfTl): etapas, responsáveis, checklists e evidências. O quadro é privado; sua consulta exige acesso concedido pela liderança.
-- [Pull request do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1): implementação da primeira entrega e verificações automáticas públicas.
+- [Pull request do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/3): fluxo do MVP e verificações automáticas públicas.
 
 As etapas de desenvolvimento são: cadastro e consulta; triagem e atendimento; validação e apresentação. O fluxo de contribuição é **branch → pull request → revisão da liderança → integração à main**.
 
@@ -45,4 +46,4 @@ Registrar ocorrência → solicitar análise → revisar sugestões → atribuir
 
 ## Estado do planejamento
 
-O planejamento técnico inicial é de 13 de novembro de 2026. O contrato continua sendo uma proposta compartilhada; cadastro, listagem e detalhe já têm implementação técnica em revisão. A aplicação completa, a integração de IA, as telas e a validação com usuários ainda serão entregues.
+O backend implementa ocorrências, triagem estruturada, revisão humana, tarefas, equipamentos, filtros, histórico e dashboard. Foram verificados 46 testes com PostgreSQL real. A chamada real da OpenAI foi recusada por saldo esgotado; testes controlados e modo explícito de simulação estão disponíveis. As telas, a integração entre frentes, a validação com usuários e a hospedagem continuam pendentes. Consulte a [entrega do backend](entrega-backend.md).

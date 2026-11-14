@@ -15,10 +15,10 @@ O SmartMall AI busca centralizar ocorrências operacionais de um shopping. A IA 
 | Frente | Situação verificável |
 | --- | --- |
 | Estrutura dos repositórios | Três repositórios separados e públicos |
-| Backend inicial | FastAPI, PostgreSQL, migração e ocorrências implementados na branch `feat/occurrences-api`; [PR #1 em revisão](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1) |
-| Verificação do backend | 25 testes passaram com PostgreSQL real, além de lint, formatação e verificação da migração |
+| Backend do MVP | Ocorrências, tarefas, equipamentos, filtros, histórico e dashboard integrados à main no [PR #3](https://github.com/SmartMall-AI/be-smartmall-ai/pull/3) |
+| Verificação do backend | 46 testes passaram com PostgreSQL real, além de lint, formatação e verificação da migração |
 | Frontend | Estrutura inicial; telas ainda não implementadas |
-| IA, tarefas e dashboard | Trabalho previsto para as próximas entregas |
+| IA | Integração e testes controlados implementados; chamada real recusada por saldo esgotado (`credit_balance_exhausted`); simulação explícita disponível |
 | Validação com usuários | Roteiro preparado; sessões e resultados ainda não coletados |
 | Hospedagem pública | Ambientes ainda não provisionados |
 
@@ -27,8 +27,10 @@ O SmartMall AI busca centralizar ocorrências operacionais de um shopping. A IA 
 - [Commit da base FastAPI e PostgreSQL](https://github.com/SmartMall-AI/be-smartmall-ai/commit/e18abcfd6095164b0126af7e658d565d817d90fd)
 - [Commit de cadastro, listagem e detalhe](https://github.com/SmartMall-AI/be-smartmall-ai/commit/21b4ef1f6bd7c2947f60e4cb488d2aee8ad8fab2)
 - [Execução aprovada dos checks do PR](https://github.com/SmartMall-AI/be-smartmall-ai/actions/runs/43513676632)
-- [README de execução da implementação em revisão](https://github.com/SmartMall-AI/be-smartmall-ai/blob/feat/occurrences-api/README.md)
-- [Checks atuais do PR](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1/checks)
+- [README de execução do backend](https://github.com/SmartMall-AI/be-smartmall-ai/blob/main/README.md)
+- [Checks atuais do PR #3](https://github.com/SmartMall-AI/be-smartmall-ai/pull/3/checks)
+- [Entrega do backend e limites da verificação](entrega-backend.md)
+- [Commit do fluxo completo do backend](https://github.com/SmartMall-AI/be-smartmall-ai/commit/f1500db)
 
 A verificação HTTP local também confirmou criação com status 201 e consulta do registro após reiniciar a API. A URL local do Swagger é uma ferramenta de desenvolvimento, não um ambiente público para a banca.
 

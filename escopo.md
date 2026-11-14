@@ -16,7 +16,7 @@ O SmartMall AI busca reduzir a dispersão de informações no atendimento operac
 4. Criar e atualizar uma tarefa vinculada à ocorrência.
 5. Consultar indicadores calculados a partir do banco.
 
-Filtros, cadastro básico de equipamentos e histórico de status vêm na sequência. A validação com usuários precisa de tempo reservado durante o evento, pois é a prática sorteada prevista no planejamento.
+Filtros, cadastro básico de equipamentos e histórico de status já estão implementados no backend; as respectivas interfaces ainda serão construídas. A validação com usuários precisa de tempo reservado durante o evento, pois é a prática sorteada prevista no planejamento.
 
 ## Fora da primeira entrega
 
@@ -36,4 +36,4 @@ Upload de fotos, notificações, sensores/IoT, exportações e autenticação co
 
 ## Decisões pendentes
 
-Definir provedor de IA, versões das dependências, responsáveis reais, prazo do evento e estratégia de acesso à demonstração. Nenhuma dessas decisões pode ser inferida como já aprovada apenas pela existência deste documento.
+OpenAI foi escolhido e as dependências do backend estão fixadas no lockfile. A chamada real depende de saldo na API; simulação explícita e triagem manual permitem demonstrar o fluxo. Definir responsáveis reais das outras frentes, prazo do evento e estratégia de acesso à demonstração. Login e autorização continuam fora do MVP local com dados fictícios.
