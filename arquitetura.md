@@ -14,7 +14,7 @@ flowchart LR
 
 ## Backend
 
-Valida entradas, aplica regras de negócio, persiste dados e centraliza a chamada ao provedor de IA. SQLAlchemy e Alembic estão previstos para modelos e migrações. A documentação interativa do FastAPI ficará em `/docs` quando a API for implementada.
+Valida entradas, aplica regras de negócio, persiste dados e centraliza a chamada ao provedor de IA. SQLAlchemy e Alembic implementam modelos e migrações; a documentação interativa está em `/docs`. A integração usa OpenAI Responses com saída estruturada validada, `store=false` e timeout configurável; a análise real ainda depende de saldo na conta da API.
 
 ## Frontend
 
@@ -24,18 +24,19 @@ Apresenta os módulos, coleta dados e consome a API. A chave de IA não é envia
 
 | Entidade | Relação principal |
 | --- | --- |
-| users | Registra ocorrências e recebe tarefas |
+| users | Catálogo de responsáveis por tarefas; não autentica nem identifica o autor de ocorrências |
 | equipment | Pode estar vinculado a várias ocorrências |
 | occurrences | Pode apontar para um equipamento e originar tarefas |
 | tasks | Vinculada a uma ocorrência e a um responsável |
+| occurrence_history | Eventos de criação, alteração, análise, revisão e status |
 
-O cadastro de usuários e a estratégia de autenticação precisam ser detalhados. Caso o MVP use responsáveis fictícios previamente cadastrados, isso deve ficar explícito na demonstração.
+O MVP implementa cadastro e consulta de responsáveis fictícios. Papéis são descritivos, sem autorização. Login, identidade do autor e permissões ficam fora desta entrega; a demonstração deve explicitar essa limitação.
 
 ## Regras de integração
 
 Salvar a ocorrência antes de chamar a IA. Uma falha no provedor não pode apagar o registro. A análise é uma operação separada e só produz sugestões; não cria tarefas nem executa ações físicas automaticamente.
 
-Os indicadores do dashboard devem derivar do banco. Definir a transição entre status de tarefa e status de ocorrência antes da integração para evitar contagens inconsistentes.
+Os indicadores derivam do banco. Iniciar tarefa põe ocorrência aberta em andamento. Concluir tarefa não resolve automaticamente a ocorrência; o operador resolve explicitamente após todas as tarefas concluídas. Histórico e alteração são gravados na mesma transação. Escritas de tarefa e encerramento bloqueiam a ocorrência para serializar decisões. O [contrato](contrato-api.md) detalha as regras.
 
 ## Hospedagem prevista
 

@@ -1,8 +1,8 @@
 # Backlog do hackrun
 
-Este arquivo mantém o planejamento das entregas. **BE-01 e BE-02 estão em revisão** no [PR #1 do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/1); as demais tarefas de implementação continuam planejadas. O [Trello](https://trello.com/b/TMJ0EfTl) acompanha o andamento por cores. Não foram criadas issues para duplicar este backlog nem um quadro GitHub Projects.
+Este arquivo mantém as entregas da equipe. **BE-01 a BE-05, AI-01 e a parte de API de HIST-01 estão implementados** no [PR #3 do backend](https://github.com/SmartMall-AI/be-smartmall-ai/pull/3), com 46 testes locais aprovados. A análise real da OpenAI depende de saldo na conta; o restante do produto, a revisão entre frentes e o aceite integrado continuam pendentes. Veja a [entrega do backend](entrega-backend.md). O [Trello](https://trello.com/b/TMJ0EfTl) acompanha o andamento por cores. Não foram criadas issues para duplicar este backlog nem um quadro GitHub Projects.
 
-Sugestão para o quadro: **A fazer → Em andamento → Em revisão → Concluído**. Usar rótulos `backend`, `frontend`, `docs`, `ia`, `integracao` e prioridades `P0` e `P1`.
+O Trello mantém listas por etapa e uma única cor de andamento por cartão. A legenda final explica amarelo, laranja, roxo, verde, vermelho e azul; não adicionar prefixos de estado aos títulos.
 
 | ID | Prioridade | Frente | Entrega | Critério de conclusão | Dependência |
 | --- | --- | --- | --- | --- | --- |
